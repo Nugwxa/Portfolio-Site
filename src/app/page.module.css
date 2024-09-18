@@ -1,0 +1,59 @@
+.heroSection {
+  min-height: 608px;
+  height: fit-content;
+  padding: var(--space-3);
+  background: var(--accent-3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  text-align: center;
+  color: var(--accent-11);
+}
+
+.userDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.userName {
+  color: var(--accent-12);
+  font-size: 48px;
+  margin: 0;
+  padding: 0;
+}
+
+.userRole {
+  font-weight: 600 !important;
+}
+
+.userSummary {
+  width: 100%;
+  text-align: center;
+  max-width: 586px;
+  font-weight: 500 !important;
+}
+
+.userSocials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+}
+
+.socialButton {
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--space-3);
+  border: 2px solid var(--accent-11);
+  font-weight: 500 !important;
+  transition: 0.3s;
+}
+
+.socialButton:hover {
+  color: var(--accent-1);
+  background-color: var(--accent-11);
+}
