@@ -6,7 +6,7 @@ import classNames from 'classnames'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'OJ Abba',
+  title: 'OJ Abba | Software Developer',
   description: 'Software Developer',
 }
 
