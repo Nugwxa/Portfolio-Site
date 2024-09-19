@@ -19,7 +19,7 @@ export default function Home() {
               <Link href={'#projects'}>Projects</Link>
             </li>
             <li>
-              <Link href={'mailto:oj@underonecloud.com'}>Contact</Link>
+              <Link href={'mailto:phavorabba@gmail.com'}>Contact</Link>
             </li>
           </ul>
         </nav>
