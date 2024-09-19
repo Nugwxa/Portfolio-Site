@@ -19,7 +19,7 @@ export const user: User = {
     'I hold a BSc (Hons) in Computing from the University of Portsmouth, UK, where I developed a strong foundation in software engineering and user experience design. My work includes successful projects in web development, from custom LMS solutions to dynamic voting platforms, demonstrating my commitment to delivering high-quality, impactful software.',
   ],
   socials: [
-    { label: 'Github', link: 'https://github.com/Nugwxa' },
+    { label: 'GitHub', link: 'https://github.com/Nugwxa' },
     { label: 'LinkedIn', link: 'https://www.linkedin.com/in/ojabba/' },
   ],
 }
