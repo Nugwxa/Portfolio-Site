@@ -9,6 +9,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -28,4 +29,8 @@ h2,
 h3,
 h4 {
   font-family: var(--font-titillium);
+}
+
+h2 {
+  font-size: 2rem;
 }
