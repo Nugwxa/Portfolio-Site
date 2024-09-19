@@ -11,7 +11,9 @@ export default function ProjectCard(props: Readonly<ProjectCardProps>) {
 
   return (
     <div className={styles.project}>
+      {/* Container for the main content of the project */}
       <div className={styles.projectContent}>
+        {/* Wrapper for the project image to control its layout and styling */}
         <div className={styles.projectImageWrapper}>
           <Image
             className={styles.projectImage}
@@ -21,8 +23,10 @@ export default function ProjectCard(props: Readonly<ProjectCardProps>) {
           />
         </div>
 
+        {/* Project Title */}
         <h3 className={styles.projectTitle}>{project.title}</h3>
 
+        {/* Project Tags */}
         <div className={styles.projectTags}>
           {project.tags.map((tag) => {
             return (
@@ -33,12 +37,16 @@ export default function ProjectCard(props: Readonly<ProjectCardProps>) {
           })}
         </div>
 
+        {/* Project Description */}
         <div className={styles.projectDescription}>
+          {/* Iterate over each paragraph in the project's description array and render them */}
           {project.description.map((paragraph) => {
             return <p key={paragraph}>{paragraph}</p>
           })}
         </div>
       </div>
+
+      {/* Container for the project's external links, such as the live project and source code */}
       <div className={styles.projectLinks}>
         {project.projectLink && (
           <Link
