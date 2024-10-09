@@ -1,9 +1,9 @@
 import { projects } from '@/data/projects'
+import Button from '@/components/Button'
 import ContentWrapper from '@/components/ContentWrapper'
 import Header from '@/components/Header'
 import ProjectCard from '@/components/ProjectCard/'
 import styles from './page.module.css'
-import Button from '@/components/Button'
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <Header />
 
       <ContentWrapper>
-        <section className={styles.heroSection}>
+        <section className={styles.heroSection} id="about">
           <div className={styles.userDetailsWrapper}>
             <h1 className={styles.userName}>OJ Abba</h1>
             <div className={styles.userRole}>Software Developer</div>
@@ -40,7 +40,7 @@ export default function Home() {
         {/* Projects */}
 
         <section className={styles.section} id="projects">
-          <h2>Projects</h2>
+          <h2>Featured Projects</h2>
 
           <div className={styles.projectsWrapper}>
             {projects.map((project) => {

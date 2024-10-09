@@ -10,10 +10,12 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  scroll-margin-top: 50px;
   font-family: var(--font-roboto);
 }
 
 body {
+  /* scroll-padding-top: 200px; */
   overflow-x: hidden;
   color: var(--accent-12);
 }

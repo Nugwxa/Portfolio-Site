@@ -11,7 +11,7 @@
   border: 1.5px solid var(--accent-7);
   background-color: var(--accent-4);
   padding: var(--space-2) var(--space-4);
-  border-radius: 40px;
+  border-radius: 10px;
 }
 
 .navWrapper ul {
@@ -28,5 +28,5 @@
   transition: 0.3s;
 }
 .navWrapper ul li a:hover {
-  color: var(--accent-8);
+  color: var(--teal-12);
 }
