@@ -36,6 +36,7 @@ export default function RootLayout({
         <Theme
           className="themeWrapper"
           accentColor="gray"
+          appearance="dark"
           hasBackground={false}
         >
           {children}
