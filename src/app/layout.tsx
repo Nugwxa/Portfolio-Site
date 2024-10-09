@@ -5,9 +5,37 @@ import { Theme } from '@radix-ui/themes'
 import classNames from 'classnames'
 import type { Metadata } from 'next'
 
+const metaTitle = 'OJ Abba'
+const metaDescription =
+  "I'm OJ, I build user-friendly web applications and solve complex problems using modern frameworks."
+const metaURL = 'https://nugwxa.vercel.app/'
+const metaImage = 'https://nugwxa.vercel.app/img/opengraph.jpg'
+
 export const metadata: Metadata = {
-  title: 'OJ Abba | Software Developer',
-  description: 'Software Developer',
+  title: metaTitle,
+  description: metaDescription,
+  openGraph: {
+    title: metaTitle,
+    description: metaDescription,
+    url: metaURL,
+    images: [
+      {
+        url: metaImage,
+        width: 1200,
+        height: 630,
+        alt: metaTitle,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: metaTitle,
+    description: metaDescription,
+    images: [metaImage],
+  },
+  alternates: {
+    canonical: metaURL,
+  },
 }
 
 const robotoFont = Roboto({
