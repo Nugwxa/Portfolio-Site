@@ -10,11 +10,11 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  font-family: var(--font-roboto);
 }
 
 body {
   overflow-x: hidden;
-  font-family: var(--font-league-spartan);
   color: var(--accent-12);
 }
 
@@ -23,13 +23,9 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: var(--font-titillium);
+h1 {
+  font-size: 3rem;
 }
-
 h2 {
   font-size: 2rem;
 }

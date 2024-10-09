@@ -1,7 +1,7 @@
 import '@radix-ui/themes/styles.css'
 import '@styles/globals.css'
+import { Roboto } from 'next/font/google'
 import { Theme } from '@radix-ui/themes'
-import { Titillium_Web, League_Spartan } from 'next/font/google'
 import classNames from 'classnames'
 import type { Metadata } from 'next'
 
@@ -10,16 +10,10 @@ export const metadata: Metadata = {
   description: 'Software Developer',
 }
 
-const titillium = Titillium_Web({
+const robotoFont = Roboto({
   subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  variable: '--font-titillium',
-})
-
-const leagueSpartan = League_Spartan({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  variable: '--font-league-spartan',
+  weight: ['300', '400', '500'],
+  variable: '--font-roboto',
 })
 
 export default function RootLayout({
@@ -29,10 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        data-theme="gray"
-        className={classNames(leagueSpartan.variable, titillium.variable)}
-      >
+      <body data-theme="gray" className={classNames(robotoFont.variable)}>
         <Theme
           className="themeWrapper"
           accentColor="gray"
