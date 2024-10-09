@@ -4,6 +4,7 @@ import { Roboto } from 'next/font/google'
 import { Theme } from '@radix-ui/themes'
 import classNames from 'classnames'
 import type { Metadata } from 'next'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const metaTitle = 'OJ Abba'
 const metaDescription =
@@ -61,6 +62,7 @@ export default function RootLayout({
           {children}
         </Theme>
       </body>
+      <GoogleAnalytics gaId={process.env.GoogleID ?? ''} />
     </html>
   )
 }
