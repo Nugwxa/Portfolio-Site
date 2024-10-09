@@ -1,0 +1,9 @@
+.link {
+  display: flex;
+  gap: var(--space-1);
+  padding: var(--space-1);
+}
+
+.link:hover {
+  color: var(--teal-12);
+}

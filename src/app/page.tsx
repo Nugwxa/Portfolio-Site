@@ -1,69 +1,46 @@
 import { projects } from '@/data/projects'
-import { user } from '@/data/'
+import Button from '@/components/Button'
 import ContentWrapper from '@/components/ContentWrapper'
-import Link from 'next/link'
+import Header from '@/components/Header'
 import ProjectCard from '@/components/ProjectCard/'
 import styles from './page.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <div className={styles.navWrapper}>
-        <nav>
-          <ul>
-            <li>
-              <Link href={'#about'}>About</Link>
-            </li>
-
-            <li>
-              <Link href={'#projects'}>Projects</Link>
-            </li>
-            <li>
-              <Link href={'mailto:phavorabba@gmail.com'}>Contact</Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      {/* Hero section containing user details and social links */}
-      <section className={styles.heroSection}>
-        <div className={styles.userDetails}>
-          <h1 className={styles.userName}>{user.name}</h1>
-          <div className={styles.userRole}>{user.role}</div>
-        </div>
-
-        <div className={styles.userSummary}>{user.summary}</div>
-
-        {user.socials.length > 0 && (
-          <div className={styles.userSocials}>
-            {user.socials.map((social) => {
-              return (
-                <Link
-                  key={social.link}
-                  href={social.link}
-                  target="_blank"
-                  className={styles.socialButton}
-                >
-                  {social.label}
-                </Link>
-              )
-            })}
-          </div>
-        )}
-      </section>
+    <div>
+      <Header />
 
       <ContentWrapper>
-        <section className={styles.section} id="about">
-          <h2>About Me</h2>
+        <section className={styles.heroSection} id="about">
+          <div className={styles.userDetailsWrapper}>
+            <h1 className={styles.userName}>OJ Abba</h1>
+            <div className={styles.userRole}>Software Developer</div>
+          </div>
 
-          <div className={styles.userProfile}>
-            {user.profile.map((paragraph) => {
-              return <p key={paragraph}>{paragraph}</p>
-            })}
+          <div className={styles.userSummary}>
+            <p>
+              I build user-friendly web applications and solve complex problems
+              using modern frameworks like Next.js, Astro, and Node.js. With a
+              strong focus on clean, efficient code, I thrive in collaborative
+              environments where I can continuously learn and improve.
+            </p>
+
+            <p>
+              In my free time, I explore my love for cycling, discover new
+              trails, and play the saxophone.
+            </p>
+          </div>
+
+          <div className={styles.userSocials}>
+            <Button href="https://github.com/Nugwxa">Github</Button>
+            <Button href="https://www.linkedin.com/in/ojabba/">LinkedIn</Button>
           </div>
         </section>
 
+        {/* Projects */}
+
         <section className={styles.section} id="projects">
-          <h2>Projects</h2>
+          <h2>Featured Projects</h2>
 
           <div className={styles.projectsWrapper}>
             {projects.map((project) => {
