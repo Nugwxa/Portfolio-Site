@@ -9,7 +9,7 @@ export type ProjectDTO = {
 export const projects: ProjectDTO[] = [
   {
     title: 'Maguire LMS',
-    tags: ['NextJS', 'Typescript', 'Node', 'Stripe', 'MySql', 'Radix UI'],
+    tags: ['NextJS', 'Typescript', 'Node', 'Stripe', 'MySQL', 'Radix UI'],
     description: [
       'Developed a robust Learning Management System (LMS) with custom access levels, course management, PDF certificate generation, Stripe integration for course credits, and a feedback system. Integrated an xAPI-based Learning Record Store (LRS) for tracking user activities and providing detailed reporting. Styled all emails to match the client’s branding for a cohesive user experience.',
     ],
