@@ -4,8 +4,8 @@ import styles from './Header.module.css'
 
 export default async function Header() {
   return (
-    <div className={styles.navWrapper}>
-      <nav>
+    <header aria-label="Main Navigation" className={styles.navWrapper}>
+      <nav role="navigation">
         <ul>
           <li>
             <Link href={'#about'}>About</Link>
@@ -15,10 +15,15 @@ export default async function Header() {
             <Link href={'#projects'}>Projects</Link>
           </li>
           <li>
-            <Link href={'mailto:phavorabba@gmail.com'}>Contact</Link>
+            <Link
+              title="Send an email to nugwxa@gmail.com"
+              href={'mailto:nugwxa@gmail.com'}
+            >
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   )
 }

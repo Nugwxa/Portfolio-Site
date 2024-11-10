@@ -10,17 +10,18 @@ export default function Home() {
     <div>
       <Header />
 
-      <ContentWrapper>
+      <ContentWrapper className={styles.contentWrapper}>
+        {/* Hero Section */}
         <section className={styles.heroSection} id="about">
           <div className={styles.userDetailsWrapper}>
             <h1 className={styles.userName}>OJ Abba</h1>
-            <div className={styles.userRole}>Software Developer</div>
+            <p className={styles.userRole}>Software Developer</p>
           </div>
 
           <div className={styles.userSummary}>
             <p>
               I build user-friendly web applications and solve complex problems
-              using modern frameworks like Next.js, Astro, and Node.js. With a
+              using modern frameworks like NextJS, Astro, and NodeJS. With a
               strong focus on clean, efficient code, I thrive in collaborative
               environments where I can continuously learn and improve.
             </p>
@@ -32,13 +33,12 @@ export default function Home() {
           </div>
 
           <div className={styles.userSocials}>
-            <Button href="https://github.com/Nugwxa">Github</Button>
+            <Button href="https://github.com/Nugwxa">GitHub</Button>
             <Button href="https://www.linkedin.com/in/ojabba/">LinkedIn</Button>
           </div>
         </section>
 
         {/* Projects */}
-
         <section className={styles.section} id="projects">
           <h2>Featured Projects</h2>
 
