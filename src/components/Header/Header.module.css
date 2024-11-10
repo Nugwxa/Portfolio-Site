@@ -1,17 +1,17 @@
 .navWrapper {
-  margin-top: var(--space-5);
-  width: 100%;
   display: flex;
-  position: fixed;
   justify-content: center;
+  margin-top: var(--space-5);
+  position: fixed;
+  width: 100%;
   z-index: 200;
 }
 
 .navWrapper nav {
-  border: 1.5px solid var(--accent-7);
-  background-color: var(--accent-4);
-  padding: var(--space-2) var(--space-4);
+  background-color: var(--accent-2);
+  border: 1.5px solid var(--accent-3);
   border-radius: 10px;
+  padding: var(--space-2) var(--space-4);
 }
 
 .navWrapper ul {
@@ -20,13 +20,21 @@
 }
 
 .navWrapper ul li {
+  color: var(--accent-12);
+  font-family: var(--font-big-shoulders);
   list-style: none;
-  color: var(--accent-11);
-  font-family: var(--font-league-spartan);
 }
+
 .navWrapper ul li a {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
   transition: 0.3s;
 }
+
 .navWrapper ul li a:hover {
-  color: var(--teal-12);
+  color: var(--green-12);
+}
+
+.navWrapper ul li a:focus {
+  color: var(--green-8);
 }
