@@ -15,6 +15,9 @@ const metaImage = 'https://nugwxa.vercel.app/img/opengraph.jpg'
 export const metadata: Metadata = {
   title: metaTitle,
   description: metaDescription,
+  verification: {
+    google: 'googlec8b8a42b88918670',
+  },
   openGraph: {
     title: metaTitle,
     description: metaDescription,
