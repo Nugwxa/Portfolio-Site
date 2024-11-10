@@ -1,10 +1,10 @@
 import '@radix-ui/themes/styles.css'
 import '@styles/globals.css'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { Roboto } from 'next/font/google'
 import { Theme } from '@radix-ui/themes'
 import classNames from 'classnames'
 import type { Metadata } from 'next'
-import { GoogleAnalytics } from '@next/third-parties/google'
 
 const metaTitle = 'OJ Abba'
 const metaDescription =
@@ -15,6 +15,8 @@ const metaImage = 'https://nugwxa.vercel.app/img/opengraph.jpg'
 export const metadata: Metadata = {
   title: metaTitle,
   description: metaDescription,
+  keywords:
+    'OJ Abba, Ojonugwa Abba, nugwxa, nugwa, Abba software developer, nugwxa software, OJ Abba developer, Ojonugwa Abba developer, ojabba.com, nugwxa.vercel.app, nugwxa.com',
   verification: {
     google: '28vPdJOtr1fBzjrRWjqghexJ-6-rIbZWuifMCKn871c',
   },
