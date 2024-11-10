@@ -26,8 +26,10 @@ a {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--font-big-shoulders);
+  font-weight: 900;
 }
 h1 {
   font-size: 3rem;
@@ -35,5 +37,4 @@ h1 {
 }
 h2 {
   font-size: 2rem;
-  font-weight: 900;
 }

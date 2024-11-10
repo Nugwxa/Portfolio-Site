@@ -17,6 +17,7 @@ export default function ProjectCard(props: Readonly<ProjectCardProps>) {
           className={styles.projectImage}
           alt={project.title}
           src={project.imgUrl}
+          sizes="(max-width: 768px) 768px"
           fill
         />
       </div>
