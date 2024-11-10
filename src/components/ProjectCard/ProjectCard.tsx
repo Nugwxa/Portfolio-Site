@@ -50,12 +50,22 @@ export default function ProjectCard(props: Readonly<ProjectCardProps>) {
         {/* Links */}
         <div className={styles.projectLinks}>
           {project.projectLink && (
-            <Button href={project.projectLink} target="_blank">
+            <Button
+              href={project.projectLink}
+              target="_blank"
+              aria-label={`View the project ${project.title} in a new tab`}
+              rel="noopener noreferrer"
+            >
               View Project
             </Button>
           )}
           {project.sourceCodeLink && (
-            <Button href={project.sourceCodeLink} target="_blank">
+            <Button
+              href={project.sourceCodeLink}
+              target="_blank"
+              aria-label={`View the source code for ${project.title} in a new tab`}
+              rel="noopener noreferrer"
+            >
               View Source
             </Button>
           )}
