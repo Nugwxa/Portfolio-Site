@@ -21,7 +21,7 @@ export default function Home() {
           <div className={styles.userSummary}>
             <p>
               I build user-friendly web applications and solve complex problems
-              using modern frameworks like Next.js, Astro, and Node.js. With a
+              using modern frameworks like NextJS, Astro, and NodeJS. With a
               strong focus on clean, efficient code, I thrive in collaborative
               environments where I can continuously learn and improve.
             </p>
