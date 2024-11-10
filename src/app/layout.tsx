@@ -1,11 +1,12 @@
 import '@radix-ui/themes/styles.css'
 import '@styles/globals.css'
+import { Big_Shoulders_Display, Roboto } from 'next/font/google'
 import { GoogleAnalytics } from '@next/third-parties/google'
-import { Roboto } from 'next/font/google'
 import { Theme } from '@radix-ui/themes'
 import classNames from 'classnames'
 import type { Metadata } from 'next'
 
+// Metadata
 const metaTitle = 'OJ Abba'
 const metaDescription =
   "I'm OJ, I build user-friendly web applications and solve complex problems using modern frameworks."
@@ -44,10 +45,17 @@ export const metadata: Metadata = {
   },
 }
 
+// Fonts
 const robotoFont = Roboto({
   subsets: ['latin'],
   weight: ['300', '400', '500'],
   variable: '--font-roboto',
+})
+
+const bigShouldersFont = Big_Shoulders_Display({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-big-shoulders',
 })
 
 export default function RootLayout({
@@ -57,7 +65,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body data-theme="gray" className={classNames(robotoFont.variable)}>
+      <body
+        data-theme="gray"
+        className={classNames(robotoFont.variable, bigShouldersFont.variable)}
+      >
         <Theme
           className="themeWrapper"
           accentColor="gray"
