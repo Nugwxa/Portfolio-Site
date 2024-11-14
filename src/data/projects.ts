@@ -53,6 +53,18 @@ export const projects: ProjectDTO[] = [
     imgUrl: '/img/fvp-screenshot.JPG',
   },
 
+  // Moving Faces
+  {
+    title: 'Moving Faces',
+    tags: ['Astro', 'JavaScript', 'TypeScript', 'SCSS'],
+    description: [
+      'A grid layout of faces where hovering over any face makes the nearby faces "look" towards it. This simple, fun effect adds movement and can make team photos on company pages more engaging. Initially used smiley faces as placeholders, but the effect works well with real images, adding an interactive touch to "Meet the Team" sections.',
+    ],
+    imgUrl: '/img/moving-faces.JPG',
+    projectLink: 'https://moving-faces.vercel.app/',
+    sourceCodeLink: 'https://github.com/Nugwxa/Moving-Faces',
+  },
+
   // Built By Cornertone
   {
     title: 'Built By Cornerstone',
