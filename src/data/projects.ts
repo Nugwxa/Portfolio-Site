@@ -41,7 +41,7 @@ export const projects: ProjectDTO[] = [
     projectLink: 'https://underonecloud.com/',
   },
 
-  // Footbal Voting Platform
+  // Football Voting Platform
   {
     title: 'Football Voting Platform',
     tags: ['NextJS', 'Typescript', 'Node', 'Radix UI', 'Supabase'],
@@ -65,7 +65,7 @@ export const projects: ProjectDTO[] = [
     sourceCodeLink: 'https://github.com/Nugwxa/Moving-Faces',
   },
 
-  // Built By Cornertone
+  // Built By Cornerstone
   {
     title: 'Built By Cornerstone',
     tags: ['Astro', 'HTML', 'CSS', 'JavaScript', 'React', 'Express'],
